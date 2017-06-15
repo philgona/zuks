@@ -1,4 +1,14 @@
-body{
-  background: url("../images/zuk.jpeg") no-repeat;
-  background-size: cover;
+.boddy{
+  background: url("images/1.jpg")
+  width: 20%;
+  radius:50%;
+  background-image: center;
+  background-color: skyblue;
+  text-align: center;
+}
+p{
+  text-align border-top ;
+}
+{
+  background-color: skyblue
 }

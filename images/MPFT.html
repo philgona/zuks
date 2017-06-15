@@ -1,0 +1,1446 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>MPFT</title>
+    <link href="MPFT_files/css.css" rel="stylesheet">
+    <link rel="stylesheet" href="MPFT_files/bootstrap.css">
+
+    <link rel="stylesheet" href="MPFT_files/lib.css">
+    <link rel="stylesheet" href="MPFT_files/styles.css">
+
+    <script src="MPFT_files/jquery.js"></script>
+    <script src="MPFT_files/bootstrap.js"></script>
+</head>
+
+<body onload="load()">
+    <div id="container">
+        <header>Front End Web Development
+        </header>
+        <div>
+            <div id="feed_btn">
+                <button class="btn" id="open_feedback">Feedback</button>
+            </div>
+            <div id="feedback_modal">
+                <form id="feedback_form" enctype="text/plain" target="hidden_iframe" action="https://docs.google.com/forms/d/e/1FAIpQLScs-ILUy3ncxp8uNLZf0TGKgPuM9Rn3yd9hL29iPCUANtc-Rg/formResponse" onsubmit="submittedFull=true;">
+                    <label>
+                        <textarea class="hidden moringa_track" name="entry.124781542">Prep full-time</textarea>
+                        What would you like to share with us?
+                        <br>
+                        <textarea cols="70" type="text" name="entry.431125286" required=""></textarea>
+                        <br>
+                        <br> Email address:
+                        <br>
+                        <textarea cols="70" type="text" name="entry.398147209"></textarea>
+                    </label>
+                    <br>
+                    <button class="btn" id="close_feedback">Submit</button>
+                </form>
+            </div>
+        </div>
+        <nav>
+            <section>
+                <div class="panel-group" id="accordion">
+                    <!-- WEEK 1 SECTION -->
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                            <a aria-expanded="false" class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse1">Week 1</a>
+                            </h4>
+                        </div>
+                        <div aria-expanded="false" id="collapse1" class="panel-collapse collapse">
+                            <div>
+                                <ol class="panel-body">
+                                    <li><a class="load done" href="#01.html">1: Monday</a></li>
+                                    <ul>
+                                        <li>Git HTML and CSS Objectives</li>
+                                        <li>Git Workflow</li>
+                                        <li>Markdown</li>
+                                        <li>Hyper Text Markup Language (HTML)</li>
+                                        <li>Indentation and spacing</li>
+                                        <li>HTML block elements</li>
+                                        <li>HTML inline elements</li>
+                                    </ul>
+                                    <li><a class="load done" href="#02.html">2: Tuesday</a></li>
+                                    <ul>
+                                        <li>READMEs</li>
+                                        <li>Styling text</li>
+                                        <li>Debugging</li>
+                                        <li>Github pages</li>
+                                        <li>Branching and Merging</li>
+                                    </ul>
+                                    <li><a class="load done" href="#03.html">3: Wednesday</a></li>
+                                    <ul>
+                                        <li>Styling with classes</li>
+                                        <li>Divs and Spans</li>
+                                        <li>Floats</li>
+                                        <li>The Box Model</li>
+                                        <li>Intermediate CSS</li>
+                                    </ul>
+                                    <li><a class="load done" href="#04.html">4: Thursday</a></li>
+                                    <ul>
+                                        <li>Classes vs Ids</li>
+                                        <li>Media Features and types</li>
+                                        <li>Bootstrap</li>
+                                    </ul>
+                                    <li><a class="load done" href="#05.html">5: Friday</a></li>
+                                    <ul>
+                                        <li>Independent Project</li>
+                                    </ul>
+                                    <li><a class="load done" href="#weekend1.html">Weekend</a></li>
+                                    <ul>
+                                        <li></li>
+                                    </ul>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- WEEK 2 SECTION -->
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                            <a aria-expanded="true" class="" data-toggle="collapse" data-parent="#accordion" href="#collapse2">Week 2</a>
+                            </h4>
+                        </div>
+                        <div style="" aria-expanded="true" id="collapse2" class="panel-collapse collapse in">
+                            <div>
+                                <ol class="panel-body">
+                                    <li><a class="load done" href="#06.html">1: Monday</a></li>
+                                    <ul>
+                                        <li>Introduction to JavaScript</li>
+                                        <li>Arithmetic</li>
+                                        <li>Variables</li>
+                                        <li>Strings</li>
+                                        <li>Operators</li>
+                                    </ul>
+                                    <li><a class="load done" href="#07.html">2: Tuesday</a></li>
+                                    <ul>
+                                        <li>Data types</li>
+                                        <li>Functions</li>
+                                        <li>Calculator</li>
+                                    </ul>
+                                    <li><a class="load done" href="#08.html">3: Wednesday</a></li>
+                                    <ul>
+                                        <li>Introduction to jQuery(javascript library)</li>
+                                        <li>jQuery: Simple Effects</li>
+                                        <li>jQuery: Add or Remove Classes</li>
+                                        <li>DOM Manipulation and traversal</li>
+                                        <li>Variable Scope</li>
+                                    </ul>
+                                    <li><a class="load done" href="#09.html">4: Thursday</a></li>
+                                    <ul>
+                                        <li>Forms</li>
+                                        <li>Debugging in Javascript</li>
+                                        <li>Calculator App</li>
+                                        <li>Branching</li>
+                                    </ul>
+                                    <li><a class="load done" href="#10.html">5: Friday</a></li>
+                                    <ul>
+                                        <li>Independent Project</li>
+                                    </ul>
+                                    <li><a class="load done" href="#weekend2.html">Weekend</a></li>
+                                    <ul>
+                                        <li>Practice on branching(Cotrol flows)</li>
+                                    </ul>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- WEEK 3 SECTION -->
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                            <a aria-expanded="false" class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse3">Week 3</a>
+                            </h4>
+                        </div>
+                        <div aria-expanded="false" id="collapse3" class="panel-collapse collapse">
+                            <div>
+                                <ol class="panel-body">
+                                    <li><a class="load done" href="#11.html">1. Monday</a></li>
+                                    <ul>
+                                        <li>Javascript Arrays</li>
+                                        <li>Array Methods</li>
+                                        <li>Looping in Arrays</li>
+                                        <li>Array Mapping</li>
+                                        <li>Code</li>
+                                    </ul>
+                                    <li><a class="load done" href="#12.html">2. Tuesday</a></li>
+                                    <ul>
+                                        <li>Looping with "for"</li>
+                                        <li>Behaviour Driven Development(BDD)</li>
+                                        <li>Leap Year Exercise</li>
+                                    </ul>
+                                    <li><a class="load done" href="#13.html">3: Wednesday</a></li>
+                                    <ul>
+                                        <li>Practice: Roman Numerals</li>
+                                        <li>Practice: Cryptosquare</li>
+                                    </ul>
+                                    <li><a class="load done" href="#14.html">4: Thursday</a></li>
+                                    <ul>
+                                        <li>Catch Up Day</li>
+                                    </ul>
+                                    <li><a class="load done" href="#15.html">5: Friday</a></li>
+                                    <ul>
+                                        <li>Independent Project</li>
+                                    </ul>
+                                    <li><a class="load done" href="#weekend3.html">Weekend</a></li>
+                                    <ul>
+                                        <li>Research on Javascript Objects</li>
+                                        <li>Research on Object Oriented programming</li>
+                                    </ul>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- WEEK 4 SECTION -->
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                            <a aria-expanded="false" class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse4">Week 4</a>
+                            </h4>
+                        </div>
+                        <div aria-expanded="false" id="collapse4" class="panel-collapse collapse">
+                            <div>
+                                <ol class="panel-body">
+                                    <li><a class="load done" href="#16.html">1. Monday</a></li>
+                                    <ul>
+                                        <li>Literal Notation</li>
+                                        <li>Literal Notation vs Constructors</li>
+                                        <li>Constuctors</li>
+                                        <li>Adress Book</li>
+                                        <li>Places Visited</li>
+                                    </ul>
+                                    <li><a class="load done" href="#17.html">2. Tuesday</a></li>
+                                    <ul>
+                                        <li>To Dolist</li>
+                                        <li>Movie Tickets</li>
+                                    </ul>
+                                    <li><a class="load done" href="#18.html">3: Wednesday</a></li>
+                                    <ul>
+                                        <li>Objects within Objects</li>
+                                        <li>Address Book: Business Logic</li>
+                                        <li>Address Book: User Interface Logic</li>
+                                    </ul>
+                                    <li><a class="load done" href="#19.html">4: Thursday</a></li>
+                                    <ul>
+                                        <li>Bank Account</li>
+                                    </ul>
+                                    <li><a class="load done" href="#20.html">5: Friday</a></li>
+                                    <ul>
+                                        <li>Game of Thrones</li>
+                                    </ul>
+                                    <li><a class="load done" href="#weekend4.html">Weekend</a></li>
+                                    <ul>
+                                    </ul>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- WEEK 5 SECTION -->
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                            <a aria-expanded="false" class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse5">Week 5</a>
+                            </h4>
+                        </div>
+                        <div aria-expanded="false" id="collapse5" class="panel-collapse collapse">
+                            <div>
+                                <ol class="panel-body">
+                                    <li><a class="load done" href="#21.html">1: Tuesday</a></li>
+                                    <ul>
+                                        <li>Group Project Development</li>
+                                        <li>Git Work Flow</li>
+                                    </ul>
+                                    <!-- <li><a class="load done" href="#22.html">2: Thursday</a></li>
+            <ul>
+              <li>Check Points</li>
+            </ul>
+            <li><a class="load done" href="#23.html">3: Friday</a></li>
+            <ul>
+              <li>Group Project Presentations</li>
+              <li>Portfolio and Hiring</li>
+            </ul> -->
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </nav>
+        <div id="content"><!-- Jquery -->
+<section>
+    <h2>Intro to JQuery</h2>
+    <p>
+        Now that we know a bit of JavaScript, let's learn jQuery, a 
+JavaScript library that makes it easy to make web pages interactive. 
+Let's start by learning how to pop up dialogue boxes when you click 
+certain parts of the page.</p>
+    <br>
+    <p>
+        <alert>
+            Important Note: jQuery is updated constantly! Faster than we
+ can reasonably update this lesson! As such, make sure your 
+&lt;script&gt; tag links to the specific version and filename your 
+project is using (e.g. <em>src="js/jquery-1.12.4.js"</em> instead of <em>src="js/jquery-1.10.2.js"</em>).
+ The versions depicted in the &lt;script&gt; tags in this lesson likely 
+won't match the version in your project. Also, there is the shortcut of 
+abbreviating <code>$(document).ready()</code> to <code>$()</code>. We've
+ since updated this lesson's text to use the first, more explicit 
+version after observing confusion from students. Know that these things 
+are the same, and one is simply a shortcut for the other.
+        </alert>
+    </p>
+    <br>
+    <p>
+        Setup a new project. (Make a project folder, create <code>js</code>, <code>css</code> and <code>img</code>
+ folders inside of it, and initialize the git repository.)First, we need
+ to add two files into our project's js folder - the jQuery library file
+ and our custom scripts file. Go ahead and <a href="http://jquery.com/download/">download jQuery</a>.
+ Choose the uncompressed, development version and save it into your 
+project's js folder. Then, also inside your project's js folder, make an
+ empty file called <code>scripts.js</code> to store our own JavaScript code.</p>
+    <img class="folder" src="MPFT_files/folder-structure.png" alt="Folder Structure">
+    <br>
+    <p>Begin developing our page with this HTML in a file in our project directory:</p>
+    <pre>    <code class="html hljs xml">
+<span class="hljs-doctype">&lt;!DOCTYPE html&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">html</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">head</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">link</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"css/bootstrap.css"</span> <span class="hljs-attribute">rel</span>=<span class="hljs-value">"stylesheet"</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"text/css"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">title</span>&gt;</span>HTML help<span class="hljs-tag">&lt;/<span class="hljs-title">title</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">head</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">body</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"container"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">h1</span>&gt;</span>HTML help<span class="hljs-tag">&lt;/<span class="hljs-title">h1</span>&gt;</span>
+
+      <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>This is a very special page. If you click somewhere, it will tell you what type of HTML element you clicked on.<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+
+      <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>Look at this cute walrus!<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">img</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"img/walrus.jpg"</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;<span class="hljs-title">script</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"js/jquery-1.9.1.js"</span>&gt;</span><span class="xml">
+    <span class="hljs-tag">&lt;<span class="hljs-title">script</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"js/scripts.js"</span>&gt;</span><span class="undefined"></span></span><span class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">body</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">html</span>&gt;</span>
+    </code>
+  </pre>
+    <p>
+        It's important that our own <code>scripts.js</code> file goes 
+after jQuery, as it will rely on jQuery functionality that must be 
+loaded first. Make sure your link to the jQuery file is correct, with 
+the version number matching what you downloaded.
+        <br> Okay, we're finally ready to use jQuery! Here's the code to type in <code>scripts.js</code>:
+    </p>
+    <pre>    <code class="javascript hljs">
+jQuery(<span class="hljs-built_in">document</span>).ready(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{  
+  jQuery(<span class="hljs-string">"h1"</span>).click(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+    alert(<span class="hljs-string">"This is a header."</span>);
+  });
+
+  jQuery(<span class="hljs-string">"p"</span>).click(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+    alert(<span class="hljs-string">"This is a paragraph."</span>);
+  });
+
+  jQuery(<span class="hljs-string">"img"</span>).click(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+    alert(<span class="hljs-string">"This is an image."</span>);
+  });
+});
+    </code>
+  </pre>
+    <p>
+        Be sure you're indenting correctly! The <code>alert()</code>s are two spaces in, because they're inside the <code>function()</code>s.
+ If we load up the page and click on different parts, we'll get dialog 
+boxes popping up and telling us what they are. Hooray! Now, let's look 
+more closely at how this works. Here we have a new function: the <code>jQuery()</code>
+ function! One thing that the jQuery function does is to select HTML 
+elements on the page, based on the argument you pass in to it. So the 
+code <code>jQuery("p")</code> selects all of the paragraphs on the page. After we select the elements, we use jQuery's <code>.click()</code> method to attach an <strong>event handler</strong>
+ to each of the selected elements. The event handler "listens" to the 
+elements and responds when they're clicked. Next, we need to tell jQuery
+ what to do when the user clicks that element. We pass in a function as 
+an argument. The <code>function()</code> we're using here is just like 
+the ones we practiced before, but we aren't assigning it to a variable 
+and we're passing it as an argument to another function. This is called 
+an <strong>anonymous callback function</strong>. It is a callback function because it is not executed immediately; instead the function is passed in to the jQuery <code>click()</code> function to be executed at a future time - in the case of the <code>.click()</code>
+ function, when that event handler is triggered by a user clicking on 
+any of the selected elements. Inside the callback function, we can put 
+whatever code we want, just like in the functions we wrote before. Here 
+we call the <code>alert()</code> function to pop up a dialog box with some helpful information. We could actually pop up two alerts, like this:
+    </p>
+    <pre>    <code class="javascript hljs">
+      jQuery(<span class="hljs-string">"h1"</span>).click(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+        alert(<span class="hljs-string">"This is a header."</span>);
+        alert(<span class="hljs-string">"I told you, THIS IS A HEADER!"</span>);
+      });
+    </code>
+  </pre>
+    <p>
+        To reiterate, when you pass in a function as an argument to another function, the function being passed in is called a <code>callback</code>.
+ Phew! That's a lot of work just to make a few silly pop-ups. 
+Fortunately, even though this might feel a bit overwhelming at first, 
+most of the jQuery we'll write will look an awful lot like this, so 
+you'll get the hang of it pretty quickly. Let's do a couple things to 
+clean up our code. First, it feels a bit wrong to put our &lt;script&gt;
+ tags in the document body, where the content of the page lives. Let's 
+move them up into the &lt;head&gt;, which is where we put information 
+about the page that isn't displayed:
+    </p>
+    <pre>    <code class="html hljs xml">
+      <span class="hljs-tag">&lt;<span class="hljs-title">head</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">link</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"css/bootstrap.css"</span> <span class="hljs-attribute">rel</span>=<span class="hljs-value">"stylesheet"</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"text/css"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">script</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"js/jquery-1.9.1.js"</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">script</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"js/scripts.js"</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">title</span>&gt;</span>HTML help<span class="hljs-tag">&lt;/<span class="hljs-title">title</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">head</span>&gt;</span>
+    </code>
+  </pre>
+    <p>
+        Oh dear. Now, if we reload the page in our browser, nothing 
+happens when we click anything. Let's review our JavaScript to see why 
+this broke it. Remember that I said that <code>jQuery('p')</code> will look for all of the <code>&lt;p&gt;</code>
+ tags on the page? The web browser loads your page from the top of your 
+HTML document to the bottom. So when we put our JavaScript in the <code>&lt;head&gt;</code>, rather than at the end of the document, there are no <code>&lt;p&gt;</code> tags yet, and so there's nothing for <code>.click()</code>
+ to attach to. What we need to do is tell our JavaScript not to run 
+until the document has finished loading. Fortunately, jQuery provides an
+ easy way to do this:
+    </p>
+    <pre>    <code class="javascript hljs">
+    jQuery(<span class="hljs-built_in">document</span>).ready(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+      jQuery(<span class="hljs-string">"h1"</span>).click(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+        alert(<span class="hljs-string">"This is a header."</span>);
+      });
+
+      jQuery(<span class="hljs-string">"p"</span>).click(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+        alert(<span class="hljs-string">"This is a paragraph."</span>);
+      });
+
+      jQuery(<span class="hljs-string">"img"</span>).click(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+        alert(<span class="hljs-string">"This is an image."</span>);
+      });
+    });
+    </code>
+  </pre>
+    <p>
+        Here, we tell jQuery to look at the HTML document, and then we call the <code>.ready()</code> method on it. When the document has finished loading, jQuery will run the callback function that is passed into <code>.ready()</code>. And that function will run our code. Generally, it's a good idea to wrap your JavaScript in a function passed to <code>.ready()</code>,
+ so that it's executed after the page loads and you don't run into the 
+problem we just had. Check out our page - it works again. There's a 
+handy shortcut that most JavaScript developers use: instead of writing <code>jQuery()</code> all of the time, we can simply use <code>$()</code>:
+    </p>
+    <pre>    <code class="javascript hljs">
+    $(<span class="hljs-built_in">document</span>).ready(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+      $(<span class="hljs-string">"h1"</span>).click(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+        alert(<span class="hljs-string">"This is a header."</span>);
+      });
+
+      $(<span class="hljs-string">"p"</span>).click(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+        alert(<span class="hljs-string">"This is a paragraph."</span>);
+      });
+
+      $(<span class="hljs-string">"img"</span>).click(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+        alert(<span class="hljs-string">"This is an image."</span>);
+      });
+    });
+    </code>
+  </pre>
+    <p>
+        This isn't really necessary, but it saves us a little bit of 
+repetitive typing, and is how most people write the jQuery function. 
+Here's one final trick I want to show you. If something on your page 
+isn't working right, you can check in Chrome to make sure that you've 
+attached the event listener correctly. Right-click the element you want 
+to check, go to <em>Inspect Element</em>, and then, in the upper right corner of the box on the bottom, click <em>Event Listeners</em>. If you've attached the listener correctly, you should see it listed there.
+    </p>
+    <br>
+    <h2>Code: Cipher</h2>
+    <p>
+        Practice writing functions for encoding a sentence from your 
+user, as if you wanted to keep someone from reading it. To complete this
+ exercise, review previous lessons and the JavaScript methods we've 
+covered thus far. You may also need to research new methods.
+    </p>
+    <ul>
+        <li>Create a JavaScript file and an HTML file in Atom for this project so that you can load your JavaScript in the browser.</li>
+        <li>Start by prompting your user to enter a sentence. Then, 
+store the sentence in a variable and print it to the console to be sure 
+that you are doing this step correctly.</li>
+        <li>Create a function that will take the first and last letter of the sentence, capitalize them, and return this as a new string.</li>
+        <li>Create another function that will reverse the order of these two letters and return the result.</li>
+        <li>Create a third function that calls the other two functions 
+you've just created. For example, if I enter the sentence "I am a 
+sentence", it should enter your first function (which should output 
+"IE"), then call your second function, passing in the output value from 
+the previous. It would return "EI" to me.</li>
+        <li>Add code to your third function to concatenate the new 
+two-letter string together with the original phrase. It should add the 
+two-letter string at the end, forming the final result "I am a 
+sentenceEI."</li>
+        <li>Create a fourth function to count the number of letters in 
+the original sentence, divide it by two (rounding down if necessary), 
+and output the letter at this index. Concatenate this letter at the 
+beginning of the original sentence. For example, if "I am a sentence" is
+ my original input, and it has 16 characters in it. If I divide this by 
+2, I get 8. The letter at the 8th position in the sentence is "e". So my
+ final result is "eI am a sentenceEI".</li>
+        <li><strong>Bonus:</strong> Take the final result and reverse it: <em>"IEecnetnes a ma le"</em>.</li>
+        <li>Use jQuery to create two clickable images or pieces of text 
+in your HTML page. When you click on the left one, it should show you 
+the original sentence. If you click the other one, it should hide the 
+original sentence and show the encoded one. Use Bootstrap to organize 
+and style your page.</li>
+    </ul>
+    <p>
+        This may seem somewhat impractical, but writing multiple 
+functions that have the ability to call each other will prepare you to 
+write code in small, manageable chunks. This makes code easier to debug,
+ and complex problems easier to approach. Rather than attempting to do 
+everything all at once, we break things down into little pieces!
+    </p>
+</section>
+<h1>jQuery</h1>
+<section>
+    <h2>Simple effects</h2>
+    <p>
+        Popping up dialogue boxes isn't very interesting, so let's move 
+on to actually manipulating our web page by showing and hiding elements.
+ Here's the HTML for the page we'll work on:
+        <br>
+        <small><em>You can use any walrus image of your choice</em></small>
+    </p>
+    <pre>    <code class="html hljs xml">
+      <span class="hljs-doctype">&lt;!DOCTYPE html&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">html</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">head</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">link</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"css/bootstrap.css"</span> <span class="hljs-attribute">rel</span>=<span class="hljs-value">"stylesheet"</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"text/css"</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">link</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"css/styles.css"</span> <span class="hljs-attribute">rel</span>=<span class="hljs-value">"stylesheet"</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"text/css"</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">title</span>&lt;<span class="hljs-attribute">brikicho</span>&lt;/<span class="hljs-attribute">title</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">head</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">body</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"container"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">h1</span>&gt;</span>peek-a-boo<span class="hljs-tag">&lt;/<span class="hljs-title">h1</span>&gt;</span>
+
+            <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>Let's play peek-a-boo. Click here to see the surprise!<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+
+            <span class="hljs-tag">&lt;<span class="hljs-title">img</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"img/walrus.jpg"</span>&gt;</span>
+          <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">script</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"js/jquery-1.12.0.js"</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">script</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"js/scripts.js"</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">body</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">html</span>&gt;</span>
+    </code>
+  </pre>
+    <p>
+        Make sure that you have downloaded and correctly linked 
+bootstrap and jquery. You will need these for pretty much every project.
+        <br> Obviously, this doesn't work yet. The first thing we should
+ do is to hide the walrus with a bit of CSS. As usual, we'll make a file
+ called <code>styles.css</code> in our <code>css</code> folder. Then, we'll add a CSS rule to hide the image:
+    </p>
+    <pre>    <code class="css hljs">
+      <span class="hljs-tag">img</span> <span class="hljs-rules">{
+        <span class="hljs-rule"><span class="hljs-attribute">display</span>:<span class="hljs-value"> none</span></span>;
+      }</span>
+    </code>
+  </pre>
+    <p>
+        Now, we can use jQuery to show the walrus when you click the paragraph above it:
+    </p>
+    <pre>    <code class="javascript hljs">
+      $(<span class="hljs-built_in">document</span>).ready(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+        $(<span class="hljs-string">"p"</span>).click(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+          $(<span class="hljs-string">"img"</span>).show();
+        });
+      });
+    </code>
+  </pre>
+    <p>
+        Very nice! Here, we've used another jQuery function called <code>.show()</code> that will, obviously, show a hidden element.
+        <br> But wouldn't it be nicer if the text of the paragraph 
+changed, so after you clicked it, it said "What a cute walrus! Click 
+here to hide her again." Let's do that now. First, we need to make a 
+couple changes to our HTML:
+    </p>
+    <pre>    <code class="html hljs xml">
+      <span class="hljs-tag">&lt;<span class="hljs-title">body</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"container"</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">h1</span>&gt;</span>peek-a-boo<span class="hljs-tag">&lt;/<span class="hljs-title">h1</span>&gt;</span>
+
+          <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"walrus-hidden"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>Let's play peek-a-boo. Click here to see the surprise!<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+          <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+
+          <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"walrus-showing"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>What a cute walrus! Click here to hide her again.<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">img</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"img/walrus.jpg"</span>&gt;</span>
+          <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">body</span>&gt;</span>
+    </code>
+  </pre>
+    <p>
+        Now we've wrapped our page in two <code>&lt;div&gt;</code>s: one for when the walrus is hidden, and one for when she's showing. Let's update our CSS to hide the walrus at first:
+    </p>
+    <pre>    <code class="css hljs">
+      <span class="hljs-class">.walrus-showing</span> <span class="hljs-rules">{
+        <span class="hljs-rule"><span class="hljs-attribute">display</span>:<span class="hljs-value"> none</span></span>;
+      }</span>
+    </code>
+  </pre>
+    <pre>    <code class="javascript hljs">
+    $(<span class="hljs-built_in">document</span>).ready(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+      $(<span class="hljs-string">"p"</span>).click(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+        $(<span class="hljs-string">".walrus-showing"</span>).show();
+        $(<span class="hljs-string">".walrus-hidden"</span>).hide();
+      });
+    });
+    </code>
+  </pre>
+    <p>
+        One of the cool things about jQuery is that it uses the exact same selectors as CSS.
+        <br> Now, our code successfully changes the text that is shown 
+above the walrus! Of course, it doesn't switch back and hide her again, 
+so let's update our code once more to take care of that:
+    </p>
+    <pre>    <code class="javascript hljs">
+    $(<span class="hljs-built_in">document</span>).ready(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+      $(<span class="hljs-string">"p"</span>).click(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+        $(<span class="hljs-string">".walrus-showing"</span>).toggle();
+        $(<span class="hljs-string">".walrus-hidden"</span>).toggle();
+      });
+    });
+    </code>
+  </pre>
+    <p>
+        Nice. Now everything works as planned.
+        <br> There's something I don't like about this page, though. 
+Most users expect that when an element is clickable, it's a different 
+color, and that when they hover their mouse over it, the cursor will 
+change to a hand and the text will be underlined. Fortunately, this is 
+easy to implement with CSS:
+    </p>
+    <pre>    <code class="css hljs">
+      <span class="hljs-tag">p</span> <span class="hljs-rules">{
+        <span class="hljs-rule"><span class="hljs-attribute">cursor</span>:<span class="hljs-value"> pointer</span></span>;
+        <span class="hljs-rule"><span class="hljs-attribute">color</span>:<span class="hljs-value"> <span class="hljs-hexcolor">#0088cc</span></span></span>;
+      }</span>
+
+      <span class="hljs-rule"><span class="hljs-attribute">p</span>:<span class="hljs-value">hover {
+        text-decoration: underline</span></span>;
+      }
+    </code>
+  </pre>
+    <p>
+        Now, this works, and it looks much better. But I'm still not 
+satisfied. Here's why. Let's add another paragraph to this page:
+    </p>
+    <pre>    <code class="html hljs xml">
+      <span class="hljs-tag">&lt;<span class="hljs-title">body</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"container"</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">h1</span>&gt;</span>Peek-a-boo<span class="hljs-tag">&lt;/<span class="hljs-title">h1</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">strong</span>&gt;</span>Peek-a-boo<span class="hljs-tag">&lt;/<span class="hljs-title">strong</span>&gt;</span> is an ancient game riddled in mystery and deceit. Though it appears to be an innocent children's pastime, you may change your mind when you learn of its treacherous history.<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+
+          <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"walrus-hidden"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>Let's play peek-a-boo. Click here to see the surprise!<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+          <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+
+          <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"walrus-showing"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>What a cute walrus! Click here to hide her again.<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">img</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"img/walrus.jpg"</span>&gt;</span>
+          <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">body</span>&gt;</span>
+    </code>
+  </pre>
+    <p>
+        Gross! Our styling has run amok and is applied to the intro 
+paragraph, which really shouldn't be clickable. And even worse: if you 
+click it, it toggles the walrus! We really need to limit the scope of 
+our CSS and JavaScript. Let's add some <code>&lt;span&gt;</code> tags to clean this up:
+    </p>
+    <pre>    <code class="html hljs xml">
+      <span class="hljs-tag">&lt;<span class="hljs-title">body</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"container"</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">h1</span>&gt;</span>Peek-a-boo<span class="hljs-tag">&lt;/<span class="hljs-title">h1</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">strong</span>&gt;</span>Peek-a-boo<span class="hljs-tag">&lt;/<span class="hljs-title">strong</span>&gt;</span> is an ancient game riddled in mystery and deceit. Though it appears to be an innocent childrens' pastime, you may change your mind when you learn of its treacherous history.<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+
+          <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"walrus-hidden"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>Let's play peek-a-boo. <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"clickable"</span>&gt;</span>Click here<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span> to see the surprise!<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+          <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+
+          <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"walrus-showing"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>What a cute walrus! <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"clickable"</span>&gt;</span>Click here<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span> to hide her again.<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">img</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"img/walrus.jpg"</span>&gt;</span>
+          <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">body</span>&gt;</span>
+    </code>
+  </pre>
+    <p>
+        Now, we can update our CSS:
+    </p>
+    <pre>    <code class="css hljs">
+      <span class="hljs-class">.walrus-showing</span> <span class="hljs-rules">{
+        <span class="hljs-rule"><span class="hljs-attribute">display</span>:<span class="hljs-value"> none</span></span>;
+      }</span>
+
+      <span class="hljs-class">.clickable</span> <span class="hljs-rules">{
+        <span class="hljs-rule"><span class="hljs-attribute">cursor</span>:<span class="hljs-value"> pointer</span></span>;
+        <span class="hljs-rule"><span class="hljs-attribute">color</span>:<span class="hljs-value"> <span class="hljs-hexcolor">#0088cc</span></span></span>;
+      }</span>
+
+      <span class="hljs-rule"><span class="hljs-attribute">.clickable</span>:<span class="hljs-value">hover {
+        text-decoration: underline</span></span>;
+      }
+    </code>
+  </pre>
+    <p>
+        And JavaScript:
+    </p>
+    <pre>    <code class="javascript hljs">
+    $(<span class="hljs-built_in">document</span>).ready(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+      $(<span class="hljs-string">".clickable"</span>).click(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+        $(<span class="hljs-string">".walrus-showing"</span>).toggle();
+        $(<span class="hljs-string">".walrus-hidden"</span>).toggle();
+      });
+    });
+    </code>
+  </pre>
+    <p>
+        Ah, that's much better now. When you're writing JavaScript (and 
+CSS), it's a good idea to use classes to be specific about the elements 
+you want to select. But keep in mind, if you have more than one thing on
+ the page that can change, you might want to use one class for your CSS 
+and another class for of each of the actions. For example, if your page 
+had one place that let you show and hide a walrus, and another place 
+that let you show and hide an ostrich, you might have both clickable <code>&lt;span&gt;</code>s styled with the clickable class, but one <code>&lt;span&gt;</code> with the <code>toggle-walrus</code>, and the other with a <code>toggle-ostrich</code> class. Speaking of being specific, it feels wrong to me to use the classes <code>walrus-hidden</code> and <code>walrus-showing</code>.
+ We're supposed to use classes to identify similar parts of our pages 
+that should look and act the same. For our clickable span, using a class
+ makes perfect sense: we have two places on the page where we use it, 
+and I can imagine that our website could potentially use it in many, 
+many more places. But <code>walrus-hidden</code> and <code>walrus-showing</code>
+ really couldn't be re-used anywhere else on this page - these sections 
+should be unique. Often, this is the case with JavaScript: we want to 
+identify a unique part of the page that should be changed when a unique 
+event happens. For this case, we can use an <code>id</code>. Check it out:
+    </p>
+    <pre>    <code class="html hljs xml">
+      <span class="hljs-tag">&lt;<span class="hljs-title">body</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"container"</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">h1</span>&gt;</span>Peek-a-boo<span class="hljs-tag">&lt;/<span class="hljs-title">h1</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">strong</span>&gt;</span>Peek-a-boo<span class="hljs-tag">&lt;/<span class="hljs-title">strong</span>&gt;</span> is an ancient game riddled in mystery and deceit. Though it appears to be an innocent childrens' pastime, you may change your mind when you learn of its treacherous history.<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+
+          <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"walrus-hidden"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>Let's play peek-a-boo. <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"clickable"</span>&gt;</span>Click here<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span> to see the surprise!<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+          <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+
+          <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"walrus-showing"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>What a cute walrus! <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"clickable"</span>&gt;</span>Click here<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span> to hide her again.<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">img</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"img/walrus.jpg"</span>&gt;</span>
+          <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">body</span>&gt;</span>
+    </code>
+  </pre>
+    <p>Now, we change our CSS like this:</p>
+    <pre>    <code class="css hljs">
+      <span class="hljs-id">#walrus-showing</span> <span class="hljs-rules">{
+        <span class="hljs-rule"><span class="hljs-attribute">display</span>:<span class="hljs-value"> none</span></span>;
+      }</span>
+    </code>
+  </pre>
+    <p>
+        And our JavaScript like this:
+    </p>
+    <pre>    <code class="javascript hljs">
+      $(<span class="hljs-built_in">document</span>).ready(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+        $(<span class="hljs-string">".clickable"</span>).click(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+          $(<span class="hljs-string">"#walrus-showing"</span>).toggle();
+          $(<span class="hljs-string">"#walrus-hidden"</span>).toggle();
+        });
+      });
+    </code>
+  </pre>
+    <p>
+        So, what's the difference between a <code>class</code> and an <code>ID</code>, except that we use a <code>.</code> to select a class and a <code>#</code>
+ to select an ID? Nothing, really, except that you can only use an ID 
+once on a page, and you can use a class as many times as you want. But 
+by using an ID, you can be clear that you're referring to one particular
+ thing, rather than potentially referring to several. We could actually 
+go one step further in thinking about how to make our code re-usable. 
+Instead of calling the IDs <code>walrus-showing</code> and <code>walrus-hidden</code>, we could call them <code>initially-hidden</code> and <code>initially-showing</code>.
+ That way, we could re-use this code on other pages that have the same 
+kind of toggling functionality. Now, a quick lecture before you move on 
+to practicing all that you've just learned. When we use JavaScript to 
+manipulate the page, we haven't changed the source code. No matter how 
+much we change the page with JavaScript, if you hit the Refresh button 
+in your browser, it will go back to the initial state. What JavaScript 
+is doing is manipulating the <strong>Document Object Model</strong>, or <strong>DOM</strong>.
+ The DOM is your browser's interpretation of the HTML it reads. If you 
+inspect an element of the page, you're actually seeing the <strong>DOM</strong>,
+ not the HTML. Try inspecting the page we've been working on, and then 
+click the click here part that changes the page. You can see in the 
+inspector that the DOM changes. Now, try these concepts out on your own 
+pages. Add JavaScript to hide and show various elements. Use id's and 
+classes to keep things neat and tidy. Additionally, here are a few other
+ jQuery methods to try out:
+    </p>
+    <ul>
+        <li><code>fadeIn()</code></li>
+        <li><code>fadeOut()</code></li>
+        <li><code>fadeToggle()</code></li>
+        <li><code>slideDown()</code></li>
+        <li><code>slideUp()</code></li>
+        <li><code>slideToggle()</code></li>
+    </ul>
+    <p>
+        Play around with them to get practice using these simple jQuery effects!
+    </p>
+</section>
+<section>
+    <h2>jQuery: Add &amp; Remove Classes</h2>
+    <p>
+        Adding and removing classes can be a helpful tool. Let's start with this HTML:
+    </p>
+    <pre>    <code class="html hljs xml">
+      <span class="hljs-doctype">&lt;!DOCTYPE html&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">html</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">head</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">link</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"css/bootstrap.css"</span> <span class="hljs-attribute">rel</span>=<span class="hljs-value">"stylesheet"</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"text/css"</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">link</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"css/styles.css"</span> <span class="hljs-attribute">rel</span>=<span class="hljs-value">"stylesheet"</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"text/css"</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">script</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"js/jquery-1.9.1.js"</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">script</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"js/scripts.js"</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">title</span>&gt;</span>Colors<span class="hljs-tag">&lt;/<span class="hljs-title">title</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">head</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">body</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"container"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">h1</span>&gt;</span>What's your favorite color?<span class="hljs-tag">&lt;/<span class="hljs-title">h1</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>Click a button to choose what color you'd like this page to be:<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+
+            <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"btn btn-success"</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"green"</span>&gt;</span>Green<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"btn btn-warning"</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"yellow"</span>&gt;</span>Yellow<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"btn btn-danger"</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"red"</span>&gt;</span>Red<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+          <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">body</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">html</span>&gt;</span>
+    </code>
+  </pre>
+    <p>
+        Now, some JavaScript:
+    </p>
+    <pre>    <code class="javascript hljs">
+      $(<span class="hljs-built_in">document</span>).ready(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+        $(<span class="hljs-string">"button#green"</span>).click(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+          $(<span class="hljs-string">"body"</span>).addClass(<span class="hljs-string">"green-background"</span>);
+        });
+
+        $(<span class="hljs-string">"button#yellow"</span>).click(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+          $(<span class="hljs-string">"body"</span>).addClass(<span class="hljs-string">"yellow-background"</span>);
+        });
+
+        $(<span class="hljs-string">"button#red"</span>).click(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+          $(<span class="hljs-string">"body"</span>).addClass(<span class="hljs-string">"red-background"</span>);
+        });
+      });
+    </code>
+  </pre>
+    <p>
+        When we click the green button, for example, jQuery will add the <code>green-background</code> class to the &lt;body&gt;. Now, let's create the CSS classes to actually give the page the background color we want:
+    </p>
+    <pre>    <code class="css hljs">
+      <span class="hljs-class">.green-background</span> <span class="hljs-rules">{
+        <span class="hljs-rule"><span class="hljs-attribute">background-color</span>:<span class="hljs-value"> green</span></span>;
+      }</span>
+
+      <span class="hljs-class">.yellow-background</span> <span class="hljs-rules">{
+        <span class="hljs-rule"><span class="hljs-attribute">background-color</span>:<span class="hljs-value"> yellow</span></span>;
+      }</span>
+
+      <span class="hljs-class">.red-background</span> <span class="hljs-rules">{
+        <span class="hljs-rule"><span class="hljs-attribute">background-color</span>:<span class="hljs-value"> red</span></span>;
+      }</span>
+    </code>
+  </pre>
+    <p>
+        And our page works! But there's a problem. If we click any one 
+button, everything is fine. But if we then click a button of a lighter 
+color, it won't change the background. So if we click <em>Yellow</em> and then Red, it works. But if we click then click <em>Green</em> after <em>Red</em>, nothing happens. We need to remove the other classes before applying the new class. Fortunately, that's easy:
+    </p>
+    <pre>    <code class="javascript hljs">
+      $(<span class="hljs-built_in">document</span>).ready(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+        $(<span class="hljs-string">"button#green"</span>).click(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+          $(<span class="hljs-string">"body"</span>).removeClass();
+          $(<span class="hljs-string">"body"</span>).addClass(<span class="hljs-string">"green-background"</span>);
+        });
+
+        $(<span class="hljs-string">"button#yellow"</span>).click(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+          $(<span class="hljs-string">"body"</span>).removeClass();
+          $(<span class="hljs-string">"body"</span>).addClass(<span class="hljs-string">"yellow-background"</span>);
+        });
+
+        $(<span class="hljs-string">"button#red"</span>).click(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+          $(<span class="hljs-string">"body"</span>).removeClass();
+          $(<span class="hljs-string">"body"</span>).addClass(<span class="hljs-string">"red-background"</span>);
+        });
+      });
+    </code>
+  </pre>
+    <p>
+        And now everything works perfectly!
+        <br>
+        <code>removeClass()</code> without an argument removes all 
+classes from the selected element; if you'd like to just remove a 
+specific class, you can pass it in as an argument (or pass in multiple 
+classes separated by spaces).
+        <br> There is another way to change the CSS of an element with jQuery:
+    </p>
+    <pre>    <code class="javascript hljs">
+      $(<span class="hljs-string">"button#green"</span>).click(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+        $(<span class="hljs-string">"body"</span>).css(<span class="hljs-string">"background-color"</span>, <span class="hljs-string">"green"</span>);
+      });
+    </code>
+  </pre>
+    <p>
+        However, this is a bad approach for real code, for two reasons. 
+First, it's mixing our concerns. JavaScript is responsible for how the 
+page behaves; CSS is responsible for how the page looks. Here, we've put
+ something about how the page looks in our JavaScript. This makes it 
+difficult for other programmers who might need to change this page in 
+the future to know where to look for the appropriate code. Second, you 
+lose one of the biggest powers of CSS: the ability to create a class and
+ re-use that style across elements and pages. Here, when we've put a 
+style in our JavaScript, it can't be re-used. So, when you want to 
+change the style of your page, stick to adding and removing classes.
+    </p>
+</section>
+<section>
+    <h2>Practice: Add &amp; Remove Classes</h2>
+    <p>
+        <strong>Goal:</strong> Continue to familiarize yourself with jQuery, and explore these important methods by completing the exercises listed below.
+    </p>
+    <h2>Warm Up</h2>
+    <ul>
+        <li>What can be accomplished by dynamically adding and removing classes with jQuery? Why would we want to do this?</li>
+        <li>When should we use <code>.css()</code>? Why do we use this particular method?</li>
+    </ul>
+    <h2>Code</h2>
+    <h3>Adding and removing classes with jQuery (Pair sprint)</h3>
+    <ul>
+        <li>Most people like dark text on a light background, but some 
+people prefer light text on a dark background. Update your dog blog or 
+cat homepage to include a button that lets your users switch to light on
+ dark.</li>
+        <li>Now, update this page so that users can switch back to the original color scheme.</li>
+        <li>Update your boring lecture page so that when somebody clicks on a paragraph, it highlights it and adds a box around the edges.</li>
+        <li>Get an instructor to look at your work</li>
+    </ul>
+</section>
+<section>
+    <h2>More jQuery Basics Practice</h2>
+    <p>
+        <strong>Goal:</strong> Practice jQuery basics by both creating a
+ website that hides/shows various elements, and contains definitions of 
+common jQuery and JavaScript terms.
+    </p>
+    <h2>Warm Up</h2>
+    <ul>
+        <li>What is a function? How do we create one? How do we call one?</li>
+        <li>What does it mean when we say "Business Logic" when referring to JavaScript?</li>
+        <li>What is the difference between JavaScript and jQuery?</li>
+    </ul>
+    <h2>Code</h2>
+    <h3>Flashcard Site</h3>
+    <p>
+        Make a webpage that is a flashcard site for learning JS &amp; 
+jQuery. On your site, a user should be able to click on a term or 
+concept to see the definition appear. When they click on the definition,
+ the original term should appear again. Here is a list of (some) terms 
+and concepts that you have learned so far:
+    </p>
+    <ul>
+        <li>Javascript (JS)</li>
+        <li>Operators</li>
+        <li>Variables</li>
+        <li>Variable naming conventions</li>
+        <li>Functions</li>
+        <li>Strings</li>
+        <li>Methods</li>
+        <li>Arguments</li>
+        <li>Parameters</li>
+        <li>Return</li>
+        <li>Chaining methods</li>
+        <li>Strings</li>
+        <li>Booleans</li>
+        <li>Undefined</li>
+        <li>NaN</li>
+        <li>Escape</li>
+        <li>Alert</li>
+        <li>Comments</li>
+        <li>jQuery</li>
+        <li>Attributes</li>
+    </ul>
+    <p>
+        Remember to start this project in its own directory, make it a 
+Git repository and make frequent commits as you are building your site. 
+Use Bootstrap as well. Feel free to add to this site later to help you 
+study and remember key ideas of JavaScript and jQuery.
+    </p>
+</section>
+<section>
+    <h2>DOM Manipulation and Traversal</h2>
+    <p>
+        In this lesson, we are going to explore manipulating DOM elements by inserting new text with the jQuery <code>prepend()</code>
+ method. Then we'll look at how to traverse the DOM in search of a 
+specific element to remove it. Let's take a look at a visual 
+representation of the DOM that you can use as reference for manipulation
+ and traversal. Each element in the DOM, represented in each box below, 
+can be a parent, child or sibling to other elements. Understanding the 
+position of elements in the DOM will help you insert, locate and remove 
+elements, as needed.
+    </p>
+    <img src="MPFT_files/dom-visual-reference.png" alt="dom visual reference">
+    <p>
+        In the last lesson, we explored how to simply show and hide 
+elements of the DOM. Now, let's get a little more advanced and insert 
+content into the DOM. Here's some HTML we'll start with:
+    </p>
+    <pre>    <code class="html hljs xml">
+      <span class="hljs-doctype">&lt;!DOCTYPE html&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">html</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">head</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">link</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"css/bootstrap.css"</span> <span class="hljs-attribute">rel</span>=<span class="hljs-value">"stylesheet"</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"text/css"</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">link</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"css/styles.css"</span> <span class="hljs-attribute">rel</span>=<span class="hljs-value">"stylesheet"</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"text/css"</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">script</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"js/jquery-1.10.2.js"</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">script</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"js/scripts.js"</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">title</span>&gt;</span>Talk to the web page<span class="hljs-tag">&lt;/<span class="hljs-title">title</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">head</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">body</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"container"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">h1</span>&gt;</span>Talk to the web page<span class="hljs-tag">&lt;/<span class="hljs-title">h1</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>Click a button to say something to the web page. See what it says back!<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+
+            <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"btn btn-primary"</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"hello"</span>&gt;</span>Say "hello"<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"btn btn-inverse"</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"goodbye"</span>&gt;</span>Say "goodbye"<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"btn btn-danger"</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"stop"</span>&gt;</span>Say "stop copying me!"<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+
+            <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"row"</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"col-md-6"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-title">h2</span>&gt;</span>You said:<span class="hljs-tag">&lt;/<span class="hljs-title">h2</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-title">ul</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"unstyled"</span>&gt;</span>
+
+                <span class="hljs-tag">&lt;/<span class="hljs-title">ul</span>&gt;</span>
+              <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+
+              <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"col-md-6"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-title">h2</span>&gt;</span>The web page said back:<span class="hljs-tag">&lt;/<span class="hljs-title">h2</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-title">ul</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"unstyled"</span>&gt;</span>
+
+                <span class="hljs-tag">&lt;/<span class="hljs-title">ul</span>&gt;</span>
+              <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+          <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">body</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">html</span>&gt;</span>
+    </code>
+  </pre>
+    <p>
+        Now, here's the JavaScript to make the buttons work:
+    </p>
+    <pre>    <code class="javascript hljs">
+      $(<span class="hljs-built_in">document</span>).ready(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+        $(<span class="hljs-string">"button#hello"</span>).click(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+          $(<span class="hljs-string">"ul"</span>).prepend(<span class="hljs-string">"&lt;li&gt;Hello!&lt;/li&gt;"</span>);
+        });
+
+        $(<span class="hljs-string">"button#goodbye"</span>).click(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+          $(<span class="hljs-string">"ul"</span>).prepend(<span class="hljs-string">"&lt;li&gt;Goodbye!&lt;/li&gt;"</span>);
+        });
+
+        $(<span class="hljs-string">"button#stop"</span>).click(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+          $(<span class="hljs-string">"ul"</span>).prepend(<span class="hljs-string">"&lt;li&gt;Stop copying me!&lt;/li&gt;"</span>);
+        });
+      });
+    </code>
+  </pre>
+    <p>
+        The <code>.prepend()</code> method will insert the text of the 
+argument it's given into to the top of &lt;ul&gt; as the first child of 
+the &lt;ul&gt;. (As you might guess, there's also a <code>.append()</code> method that would insert at the bottom as the last child of the &lt;ul&gt;; there are also <code>.before()</code> and <code>.after()</code>
+ methods that would add the argument before or after the &lt;ul&gt; tag 
+as siblings, rather than within it as children.) This is nice, but not a
+ very fun conversation. Let's have the webpage say something different 
+back to the user:
+    </p>
+    <pre>    <code class="javascript hljs">
+      $(<span class="hljs-built_in">document</span>).ready(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+        $(<span class="hljs-string">"button#hello"</span>).click(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+          $(<span class="hljs-string">"ul#user"</span>).prepend(<span class="hljs-string">"&lt;li&gt;Hello!&lt;/li&gt;"</span>);
+          $(<span class="hljs-string">"ul#webpage"</span>).prepend(<span class="hljs-string">"&lt;li&gt;Why hello there!&lt;/li&gt;"</span>);
+        });
+
+        $(<span class="hljs-string">"button#goodbye"</span>).click(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+          $(<span class="hljs-string">"ul#user"</span>).prepend(<span class="hljs-string">"&lt;li&gt;Goodbye!&lt;/li&gt;"</span>);
+          $(<span class="hljs-string">"ul#webpage"</span>).prepend(<span class="hljs-string">"&lt;li&gt;Goodbye, dear user!&lt;/li&gt;"</span>);
+        });
+
+        $(<span class="hljs-string">"button#stop"</span>).click(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+          $(<span class="hljs-string">"ul#user"</span>).prepend(<span class="hljs-string">"&lt;li&gt;Stop copying me!&lt;/li&gt;"</span>);
+          $(<span class="hljs-string">"ul#webpage"</span>).prepend(<span class="hljs-string">"&lt;li&gt;Pardon me. I meant no offense.&lt;/li&gt;"</span>);
+        });
+      });
+    </code>
+  </pre>
+    <p>
+        Of course, we need to change the &lt;ul&gt; tags to have IDs for <code>user</code> and <code>webpage</code>. For the sake of brevity, I won't bother showing the updated HTML here. Go ahead and do that yourself.
+    </p>
+    <p><strong>THE CODE BELOW IS TRICKY. WE JUST WANT YOU TO KNOW THE STUFF ABOVE THIS POINT. </strong></p>
+    <p>
+        Now that we know how to add to the DOM, let's learn how to 
+remove from it. Let's make it so that when a user clicks a message, it 
+disappears. First, we need to select each message. When I'm working on 
+some tricky DOM manipulation, I usually start by selecting the element 
+and changing its background color to green, just so that I know I have 
+my selector working properly. You might think this bit of jQuery would 
+work:
+    </p>
+    <pre>    <code class="javascript hljs">
+      $(<span class="hljs-built_in">document</span>).ready(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+        <span class="hljs-comment">// previous code...</span>
+        $(<span class="hljs-string">'li'</span>).css(<span class="hljs-string">'background-color'</span>, <span class="hljs-string">'green'</span>);
+      });
+    </code>
+  </pre>
+    <p>
+        But it doesn't do what we want. This code is run right after the web page finishes loading <code>($(document).ready())</code>.
+ And after the page finishes loading, there are no &lt;li&gt; elements. 
+The elements are only added after we click a button. So we need to move 
+our new code to within the callback passed to <code>click()</code>. Let's start by just adding it to one of the <code>click()</code> methods:
+    </p>
+    <pre>    <code class="javascript hljs">
+      $(<span class="hljs-string">"button#hello"</span>).click(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+        $(<span class="hljs-string">"ul#user"</span>).prepend(<span class="hljs-string">"&lt;li&gt;Hello!&lt;/li&gt;"</span>);
+        $(<span class="hljs-string">"ul#webpage"</span>).prepend(<span class="hljs-string">"&lt;li&gt;Why hello there!&lt;/li&gt;"</span>);
+        $(<span class="hljs-string">'li'</span>).css(<span class="hljs-string">'background-color'</span>, <span class="hljs-string">'green'</span>);
+      });
+    </code>
+  </pre>
+    <p>
+        Now, if we click Say <em>"hello"</em>, the messages are <em>green</em>.
+        <br> Let's move to the next step - attaching an event handler in
+ place of changing the background color. Again, in the spirit of taking 
+one step at a time, we're not going to actually try to get the click to 
+delete the element - instead, we're going to simply open a dialog box:
+    </p>
+    <pre>    <code class="javascript hljs">
+      $(<span class="hljs-string">"button#hello"</span>).click(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+        $(<span class="hljs-string">"ul#user"</span>).prepend(<span class="hljs-string">"&lt;Hello!&gt;"</span>);
+        $(<span class="hljs-string">"ul#webpage"</span>).prepend(<span class="hljs-string">"&lt;Why hello there!&gt;"</span>);
+        $(<span class="hljs-string">'li'</span>).click(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+          alert(<span class="hljs-string">'hi'</span>);
+        });
+      });
+    </code>
+  </pre>
+    <p>
+        Now, if we click Say <em>"hello"</em> and then the message, we 
+get our alert! But there's a problem: if we click the button twice, 
+clicking the last message will open the alert twice. And if we click the
+ button again, the last message will open the alert three times, and the
+ middle message will open it twice. What's happening is that the first 
+time we click the button, <code>$('li')</code> only finds a single 
+message in each list, and attaches an event handler. But the next time 
+we click the button, that first message is already on the page, and a 
+second event handler is attached to it. And each time we click the 
+button again, another event handler is attached to every message on the 
+page. What we want is to only attach handlers to the message we most 
+recently inserted. Since we're inserting them at the top of each list, 
+we can select one of the &amp;li;ul&gt;s, look through its child 
+elements (the &lt;li&gt;s), and select the first one of them:
+    </p>
+    <pre>    <code class="javascript hljs">
+      $(<span class="hljs-string">"ul#user"</span>).children(<span class="hljs-string">"li"</span>).first().click(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+        alert(<span class="hljs-string">'hi'</span>);
+      });
+      $(<span class="hljs-string">"ul#webpage"</span>).children(<span class="hljs-string">"li"</span>).first().click(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+        alert(<span class="hljs-string">'hi'</span>);
+      });
+    </code>
+  </pre>
+    <p>
+        Now, each of the messages only opens a single dialog box when clicked.
+        <br> Finally, we should replace our callback with the actual code to delete the message:
+    </p>
+    <pre>    <code class="javascript hljs">
+      $(<span class="hljs-string">"ul#user"</span>).children(<span class="hljs-string">"li"</span>).first().click(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+        $(<span class="hljs-keyword">this</span>).remove();
+      });
+      $(<span class="hljs-string">"ul#webpage"</span>).children(<span class="hljs-string">"li"</span>).first().click(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+        $(<span class="hljs-keyword">this</span>).remove();
+      });
+    </code>
+  </pre>
+    <p>
+        <code>remove()</code> is pretty straightforward, but what is <code>this</code>? <code>this</code>
+ is a bit of a tricky concept in JavaScript, and I'm not going to give 
+it a full explanation here. For now, you can think of it as referring to
+ whatever was clicked on. We're done with this rather long lesson. 
+Congrats on making it through!
+    </p>
+</section>
+<section>
+    <h2>Practice: DOM Manipulation and Traversal</h2>
+    <strong>Goal:</strong> In the DOM manipulation video, we learned:
+    <ul>
+        <li>The visual representation of the DOM's parent, child and sibling relationships</li>
+        <li>How a child element will be inserted at the top of a &lt;ul&gt; tag with <code>.prepend()</code> and at the end with <code>.append()</code></li>
+        <li>How to correctly select DOM elements and delete them</li>
+        <p>
+            Practice manipulating the DOM with your partner by completing the exercises listed below.
+        </p>
+    </ul>
+    <h2>Warm Up</h2>
+    <ul>
+        <li>What is the difference between <code>.prepend()</code> and <code>.append()</code>. Describe an example of using each.</li>
+        <li>What is the difference between <code>.prepend()</code> and <code>.before()</code>? What about <code>.append()</code> and <code>.after()</code>?</li>
+        <li>Write a line of jQuery that selects an element on the DOM with the id of "salad".</li>
+    </ul>
+    <h2>Code</h2>
+    <h3>DOM Manipulation Practice</h3>
+    <p>
+        Practice adding some interactivity to your web pages:
+    </p>
+    <ul>
+        <li>Follow along with the video and build a page that "talks" to the user.</li>
+        <li>Practice selecting certain HTML elements and changing the background color to green.</li>
+        <li>Now practice removing those elements, just like in the video.</li>
+        <li>Make a "cat vs dog" page - if you click a button for the cat
+ to meow, the dog should bark back, and vice versa. Use Bootstrap to 
+style your pages!</li>
+        <li>In addition to <code>.prepend()</code> and <code>.append()</code>, you can add content before or after the selected tags (rather than within them) with <code>.before()</code> and <code>.after()</code>.</li>
+        <li>Make a page where if a user clicks on an element some sort 
+of image gets inserted into the page before or after that element. Allow
+ the new image to be removed by a click as well.</li>
+    </ul>
+</section>
+<section>
+    <h2>Homework: Variable Scope</h2>
+    <p>
+        Before we move on, let's pause to discuss <strong>variable scope</strong>.
+ The scope of a variable defines where and when it is available to be 
+used or modified. Scope can be global or local depending on how it is 
+declared.
+    </p>
+    <h2>Global Scope</h2>
+    <p>
+        Variables declared outside of functions have <code>global scope</code> which means that all code and functions can access them.
+    </p>
+    <pre>    <code class="javascript hljs">
+      <span class="hljs-keyword">var</span> globalString = <span class="hljs-string">"This is a global variable"</span>;
+
+      <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">sampleFunction</span>(<span class="hljs-params"></span>) </span>{
+        alert(globalString);
+        globalString = <span class="hljs-string">"This is a global variable update!!"</span>;
+        alert(globalString);
+      }
+
+      alert(globalString);
+      sampleFunction();
+      alert(globalString);
+    </code>
+  </pre>
+    <p>
+        Let's run this in JSFiddle and see what we get each time we ask for an alert.
+    </p>
+    <h2>Local Scope</h2>
+    <p>
+        Variables declared inside of functions have <strong>local scope</strong>
+ which means they are only locally available during the execution of the
+ function. When we look at a variable that is defined within a function,
+ we find that it's scope ends when the function is finished processing. 
+In fact, the variable is created and destroyed each time the function 
+runs.
+        <br> If we move the variable declaration from the global to the local by adding it inside the function, let's see what happens:
+    </p>
+    <pre>    <code class="javascript hljs">
+      <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">sampleFunction</span>(<span class="hljs-params"></span>) </span>{
+        <span class="hljs-keyword">var</span> globalString = <span class="hljs-string">"This is a global variable"</span>;
+        alert(globalString);
+        globalString = <span class="hljs-string">"This is a global variable update!!"</span>;
+        alert(globalString);
+      }
+
+      alert(globalString);
+    </code>
+  </pre>
+    <p>
+        Nothing. Look in the console and the error <code>Uncaught ReferenceError: globalString is not defined</code>. We have not run the function so as the error message indicates, <code>globalString</code> has not actually been defined yet. It now has local scope.
+        <br> Let's look at another example:
+    </p>
+    <pre>    <code class="html hljs xml">
+      <span class="hljs-doctype">&lt;!DOCTYPE html&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">html</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">head</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">script</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"js/jquery-1.10.2.js"</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">script</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"js/scripts.js"</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">title</span>&gt;</span>An adventure in variable scope<span class="hljs-tag">&lt;/<span class="hljs-title">title</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">head</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">body</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"click-one"</span>&gt;</span>click me first<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"click-two"</span>&gt;</span>click me second<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">body</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">html</span>&gt;</span>
+    </code>
+  </pre>
+    <p>
+        In your <em>script.js</em>
+    </p>
+    <pre>    <code class="javascript hljs">
+      $(<span class="hljs-built_in">document</span>).ready(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+
+        $(<span class="hljs-string">"div#click-one"</span>).click(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">event</span>) </span>{
+          <span class="hljs-keyword">var</span> whatToSay = <span class="hljs-string">"Hello!"</span>;
+          alert(whatToSay);
+        });
+
+        $(<span class="hljs-string">"div#click-two"</span>).click(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">event</span>) </span>{
+          alert(whatToSay);
+        });
+      });
+    </code>
+  </pre>
+    <p>
+        If we click <em>click me first</em>, a dialog box pops open that
+ says "Hello!". If we then click click me second, what happens? Nothing.
+ If we look to the JavaScript console, we find the familiar error <em>Uncaught ReferenceError: whatToSay is not defined</em>. And that's true. The <code>whatToSay</code>
+ variable is defined inside a function. Therefore, the program only 
+knows about the variable while it is inside the function processing the 
+code there. As soon as the function is complete, the variable is no 
+longer defined; it's outside the limits of <code>whatToSay</code>'s variable scope.
+    </p>
+    <h2>Unscoped variables (bad practice!)</h2>
+    <p>
+        When you create a variable, it is important to declare it to the program using the <code>var</code> keyword.
+        <br> If you declare a variable by assigning it a value like this (without <code>var</code>):
+    </p>
+    <pre>    <code class="javascript hljs">
+      <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">Namer</span>(<span class="hljs-params"></span>) </span>{
+        sampleName = <span class="hljs-string">"Cindy Lou"</span>
+      }
+    </code>
+  </pre>
+    <p>
+        JavaScript will make it a global variable <em>automatically</em>, even if it is inside of a function. In the above function, <code>sampleName</code> would become a global variable with global scope which allows any part of the code to access or modify it.
+    </p>
+    <p>
+        <strong>This is something you should <em>never</em> do. Always use the <code>var</code> keyword to declare your variables and consciously determine whether their scope should be global or local.</strong>
+    </p>
+    <p>
+        Let's just carry this through so that you understand what's going on if you see it elsewhere:
+    </p>
+    <pre>    <code class="javascript hljs">
+      $(<span class="hljs-built_in">document</span>).ready(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+
+        $(<span class="hljs-string">"div#click-one"</span>).click(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">event</span>) </span>{
+          whatToSay = <span class="hljs-string">"Hello!"</span>;
+          alert(whatToSay);
+        });
+
+        $(<span class="hljs-string">"div#click-two"</span>).click(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">event</span>) </span>{
+          alert(whatToSay);
+        });
+      });
+    </code>
+  </pre>
+    <p>
+        With the <code>var</code> keyword removed from <code>whatToSay</code>, if we click <em>click me first</em> and then click <em>click me second</em>, the dialog box will open up both times because it has defaulted to a global variable.
+        <br> This code is very small, so you may not see the problem 
+with using a global variable. But imagine a code base that's thousands 
+or tens of thousands of lines long. If you see a function that looks 
+like:
+    </p>
+    <pre>    <code class="javascript hljs">
+      <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">event</span>) </span>{
+        alert(whatToSay);
+      }
+    </code>
+  </pre>
+    <p>
+        it would be incredibly difficult to figure out where <code>whatToSay</code> was defined. And if <code>whatToSay</code>
+ was used and changed in multiple places, it would be next to impossible
+ to figure out where it's value was last set. (For a horror story on a 
+missing <code>var</code>, read Geoffrey Hayes's <a href="http://www.pixelstech.net/article/1320253282-How-One-Missing-%60var%60-Ruined-our-Launch">"How one missing <code>var</code> ruined our launch"</a> starting at the "Seem kinda bad?" paragraph.)
+        <br> To conclude, always create variables with either global or local scope using the <code>var</code>
+ keyword. Using scoped variables lets us easily follow the flow of our 
+application and ensures our functions don't step on each other's 
+execution in unexpected ways.
+    </p>
+    <h2>Peer Code Review</h2>
+    <ul>
+        <li>Is jQuery used to hide and show definitions when flashcards are clicked on?</li>
+        <li>Is code indented properly throughout?</li>
+        <li>Are Git commit messages descriptive, and in the correct tense?</li>
+    </ul>
+</section>
+</div>
+    </div>
+    <script src="MPFT_files/lib.js"></script>
+    <script src="MPFT_files/feedback.js"></script>
+    <script>
+        var completed
+
+        function load(e) {
+            completed = JSON.parse(localStorage.getItem('completed')) || []
+            $('#content').load(location.hash.substring(1) || localStorage.getItem('last_visited') || '01.html', function() {
+                $('.popup').each(function(i, el) {
+                    $(el).magnificPopup({
+                        type: $(el).attr('href').substring(0, 2) === '//' ? 'iframe' : 'ajax'
+                    })
+                })
+                $('pre code').each(function(i, block) {
+                    hljs.highlightBlock(block)
+                })
+                $('code-submission-form').each(function() {
+                    var content = completed.indexOf($(this).attr('id')) > -1 ? '<p>Code submitted... Thank you!</p>' :
+                        "<form class='student_code'><h4>Submit Your Code</h4><textarea name=code id=code_sample rows=10></textarea><br><input type=submit value=Send></form>"
+                    $(this).html(content)
+                })
+                localStorage.setItem('last_visited', location.hash.substring(1))
+                localStorage.getItem('name') && $('#name_form').text(localStorage.getItem('name'))
+            })
+        }
+
+        function add_name(e) {
+            e.preventDefault()
+            var name = $(this).find('#name').val()
+            localStorage.setItem('name', name)
+            $(this).text(name)
+        }
+
+        function loadEvent(event) {
+            var dest = $(this).attr("href")
+            event.preventDefault()
+            history.pushState(null, event.target.textContent, event.target.href)
+            load()
+        }
+
+        function showHint(event) {
+            $(event.target).hide().parent().find('secret').fadeIn(2000)
+        }
+
+        function submit_code(e) {
+            e.preventDefault()
+            var exercise_name = $(this).parent('code-submission-form').attr('id')
+            $.post('submission', $(this).serialize() + '&exercise=' + exercise_name + '&name=' + localStorage.getItem('name'))
+            completed.push(exercise_name)
+            localStorage.setItem('completed', JSON.stringify(completed))
+            $(this).html('<p>Code submitted... Thank you!</p>')
+        }
+        $('body').on('click', '.load', loadEvent)
+            .on('click', 'hint text', showHint)
+            .on('submit', '.student_code', submit_code)
+            .on('submit', '#name_form', add_name)
+        $(window).on('popstate', load)
+
+    </script>
+
+
+
+</body></html>
